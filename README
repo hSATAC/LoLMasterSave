@@ -1,2 +1,11 @@
-This is a fork for http://masteriestool.codeplex.com/
+
 Since the author is not maintaining this tool.
+h1. "LoLMasterSave"
+
+This is a fork for "http://masteriestool.codeplex.com/"
+
+h2. Recent Update
+
+* Disable End key exit feature, for PTT users.
+
+* Disable official update-check function since the author is no longer maintaining.
