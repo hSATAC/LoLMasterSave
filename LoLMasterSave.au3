@@ -1,6 +1,6 @@
 #NoTrayIcon
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
-#AutoIt3Wrapper_icon=P:\Pictures\ico\LoL_icon.ico
+#AutoIt3Wrapper_icon=icon.ico
 #AutoIt3Wrapper_UseUpx=n
 #AutoIt3Wrapper_Res_Description=LoL Masteries Set by nvn.
 #AutoIt3Wrapper_Res_Fileversion=1.6.1.274
@@ -34,7 +34,8 @@ EndFunc   ;==>ini
 
 
 OnAutoItExitRegister('OnAutoItExit')
-HotKeySet(ini('Key_Exit','{end}'), 'AutoItExit')
+;disable end key feature for PTT users
+;HotKeySet(ini('Key_Exit','{end}'), 'AutoItExit')
 HotKeySet(ini('Key_ShiftWinRun','+{home}'), 'shiftWinRun')
 HotKeySet(ini('Key_IpFarm','+{ins}'), 'createIPfarm')
 
@@ -81,6 +82,7 @@ EndIf
 
 update()
 func update(); check if the version is current
+	Return ; disable official update check
 	if not @Compiled then Return
 	HttpSetUserAgent("Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.13)")
 
