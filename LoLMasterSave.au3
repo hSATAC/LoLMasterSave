@@ -36,8 +36,8 @@ EndFunc   ;==>ini
 OnAutoItExitRegister('OnAutoItExit')
 ;disable end key feature for PTT users
 ;HotKeySet(ini('Key_Exit','{end}'), 'AutoItExit')
-HotKeySet(ini('Key_ShiftWinRun','+{home}'), 'shiftWinRun')
-HotKeySet(ini('Key_IpFarm','+{ins}'), 'createIPfarm')
+;HotKeySet(ini('Key_ShiftWinRun','+{home}'), 'shiftWinRun')
+;HotKeySet(ini('Key_IpFarm','+{ins}'), 'createIPfarm')
 
 Func AutoItExit()
 	Exit
